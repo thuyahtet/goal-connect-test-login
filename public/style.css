@@ -1,0 +1,96 @@
+/* ====== Global Style ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #90caf9, #42a5f5);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* ====== Card ====== */
+  .card {
+    width: 100%;
+    max-width: 360px;
+    background: #ffffff;
+    padding: 32px 26px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  h1,
+  h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* ====== Input ====== */
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #cfd8dc;
+    transition: 0.2s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.25);
+  }
+  
+  /* ====== Button ====== */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #1565c0;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  a {
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ====== Animation ====== */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
